@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="mode-selector">
+            <button id="vs-computer-btn" class="active">Vs. Computer</button>
+            <button id="vs-player-btn">2-Player</button>
+        </div>
+
+        <div class="scoreboard">
+            <div class="score" id="wins-display">
+                <span id="p1-score-label">Won:</span> <span>0</span>
+            </div>
+            <div class="score" id="losses-display">
+                <span id="p2-score-label">Lost:</span> <span>0</span>
+            </div>
+            <div class="score" id="draws-display">
+                Draw: <span>0</span>
+            </div>
+        </div>
+
+        <div class="game-display">
+            <div class="hands-container">
+                <div class="hand" id="player1-hand">✊</div>
+                <div class="hand" id="player2-hand">✊</div>
+            </div>
+            <div class="result-message" id="result-message">Select your Weapon</div>
+        </div>
+
+        <div class="choices">
+            <button class="choice-button" id="rock">✊</button>
+            <button class="choice-button" id="paper">✋</button>
+            <button class="choice-button" id="scissors">✌️</button>
+        </div>
+
+        <button class="play-again" id="play-again">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
